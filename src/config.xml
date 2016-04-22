@@ -1,12 +1,33 @@
-<?xml version='1.1' encoding='utf-8'?>
+<?xml version='1.0' encoding='utf-8'?>
 <widget id="org.apache.cordova.example.HelloGulp" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>HelloGulpApp</name>
+    <name>Knjizica</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        Bejz v hribe.
     </description>
     <author email="dev@cordova.apache.org" href="http://cordova.io">
         Apache Cordova Team
     </author>
     <content src="index.html" />
     <access origin="*" />
+    <plugin name="com.cordova.plugins.cookiemaster" spec="https://github.com/kristianhristov/cordova-cookie-master.git" />
+    <icon src="www/apple-touch-icon.png" />
+    <plugin name="cordova-plugin-backbutton" spec="~0.3.0" />
+    <plugin name="cordova-plugin-splashscreen" spec="https://github.com/apache/cordova-plugin-splashscreen" />
+
+    <platform name="android">
+        <!-- you can use any density that exists in the Android project -->
+        <splash src="www/images/bck.jpg" density="land-hdpi"/>
+        <splash src="www/images/bck.jpg" density="land-ldpi"/>
+        <splash src="www/images/bck.jpg" density="land-mdpi"/>
+        <splash src="www/images/bck.jpg" density="land-xhdpi"/>
+
+        <splash src="www/images/bck.jpg" density="port-hdpi"/>
+        <splash src="www/images/bck.jpg" density="port-ldpi"/>
+        <splash src="www/images/bck.jpg" density="port-mdpi"/>
+        <splash src="www/images/bck.jpg" density="port-xhdpi"/>
+    </platform>
+    <preference name="AutoHideSplashScreen" value="true" />
+    <preference name="Orientation" value="portrait" />
+
+
 </widget>

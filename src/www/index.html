@@ -1,44 +1,8 @@
-<!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <meta name="msapplication-tap-highlight" content="no" />
-        <title>Hello World</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
-    </body>
-</html>
+<!doctype html><html class="no-js" lang=""><head><meta charset="utf-8"><meta name="description" content=""><meta name="viewport" content="width=device-width,initial-scale=1"><title>knjizica</title><script type="text/javascript" charset="utf-8" src="cordova.js"></script><link rel="apple-touch-icon" href="apple-touch-icon.png"><!-- Place favicon.ico in the root directory --><link rel="stylesheet" href="styles/main.css"><script src="scripts/vendor/modernizr.js"></script></head><body onload="onLoad()"><!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]--><section id="splash"></section><section id="header"><div class="container-fluid"><div class="row"><div class="col-xs-12"><div class="bg-green"><div id="headertext">Planinska knjižica</div><div id="footerbottom"></div></div></div></div></div></section><section id="register" class="hidden"><div class="container"><div class="row"><div class="col-xs-12"><h1>Ustvari si uporabniški račun</h1><a><h2>Ali se vpiši</h2></a><form id="registerform"><div class="form-group"><span class="input input--manami"><input class="input__field input__field--manami" type="text" id="registernameinput"><label class="input__label input__label--manami" for="registernameinput"><span class="input__label-content input__label-content--manami">Ime in priimek</span></label></span></div><div class="form-group"><span class="input input--manami"><input class="input__field input__field--manami" type="email" id="registeremailinput"><label class="input__label input__label--manami" for="registeremailinput"><span class="input__label-content input__label-content--manami">Email</span></label></span></div><div class="form-group"><span class="input input--manami"><input class="input__field input__field--manami" type="password" id="registerpasswordinput"><label class="input__label input__label--manami" for="registerpasswordinput"><span class="input__label-content input__label-content--manami">Geslo</span></label></span></div><div class="checkbox"><label><input type="checkbox" id="termsandconditions"> Strinjam se s pogoji in pravili uporabe</label></div><button type="submit" class="laskobtn laskobtn-big">Oddaj</button></form></div></div></div></section><section id="login" class="hidden"><div class="container"><div class="row"><div class="col-xs-12"><h1>Vpiši se</h1><!-- <a><h2>Ali si ustvari uporabniški račun</h2></a> --><form id="loginform"><div class="form-group"><span class="input input--manami"><input class="input__field input__field--manami" type="email" id="emailinput"><label class="input__label input__label--manami" for="emailinput"><span class="input__label-content input__label-content--manami">Email</span></label></span></div><div class="form-group"><span class="input input--manami"><input class="input__field input__field--manami" type="password" id="passwordinput"><label class="input__label input__label--manami" for="passwordinput"><span class="input__label-content input__label-content--manami">Geslo</span></label></span></div><button type="submit" class="laskobtn laskobtn-big">Oddaj</button></form></div></div></div></section><section id="stamps" class="hidden"><div class="container"><div class="row"><div class="col-xs-12"><h1>Osvojeni vrhovi</h1><div class="stamps"><div id="kopitnik" data-peak="Kopitnik" data-height="910 m" class="stamp"></div><div id="loka" data-peak="Loka" data-height="1500 m" class="stamp"></div><div id="mrzlica" data-peak="Mrzlica" data-height="1122 m" class="stamp"></div><div id="nanos" data-peak="Nanos" data-height="1313 m" class="stamp"></div><div id="peca" data-peak="Peca" data-height="2125 m" class="stamp"></div><div id="razor" data-peak="Razor" data-height="2650 m" class="stamp"></div><div id="smohor" data-peak="Šmohor" data-height="1944 m" class="stamp"></div><div id="studenec" data-peak="Studenec" data-height="1280 m" class="stamp"></div><div id="zelenica" data-peak="Zelenica" data-height="2114 m" class="stamp"></div></div></div></div></div></section><section id="addstamp" class="hidden"><div id="stampme" class="stampme"><div class="container"><div class="row"><div class="col-xs-12"><div class="vrhinfo"><div class="vrhname">Mangart</div><div class="vrhheight">2679 m</div></div><div class="prev-peak"></div><div class="next-peak"></div><div class="buttonscontainer"><div class="laskobtn btn-nazaj">Nazaj</div><div class="vpisikodo"><div class="laskobtn btn-vpisi hidden">Vpiši kodo</div><input type="number" class="vpisikodo-input"><div class="laskobtn btn-oddaj-kodo">X</div></div></div></div></div></div></div></section><section id="settings" class="hidden"></section><!-- Google Analytics: change UA-XXXXX-X to be your site's ID. --><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');</script><script src="scripts/vendor.js"></script><script src="scripts/plugins.js"></script><script src="scripts/main.js"></script></body></html>

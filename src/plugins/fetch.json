@@ -1,0 +1,28 @@
+{
+    "com.cordova.plugins.cookiemaster": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/kristianhristov/cordova-cookie-master.git",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-splashscreen": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/apache/cordova-plugin-splashscreen",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-backbutton": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-backbutton"
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}

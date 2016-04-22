@@ -79,7 +79,7 @@ gulp.task('build', function() {
 
 gulp.task('run', function(cb) {
     process.chdir(buildDir);
-    return cdv.run({platforms:[testPlatform], options:['--device']});
+    return cdv.run({platforms:[testPlatform], options:['--device', '--enable-file-cookies']});
 });
 
 gulp.task('emulate', function() {
